@@ -1,0 +1,4 @@
+name: d-8-assignment
+recipe: drupal8
+config:
+  webroot: web
