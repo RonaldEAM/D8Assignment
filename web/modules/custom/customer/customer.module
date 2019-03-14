@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains customer.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function customer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the customer module.
+    case 'help.page.customer':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Customer Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

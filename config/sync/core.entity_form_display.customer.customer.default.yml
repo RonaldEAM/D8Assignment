@@ -1,0 +1,38 @@
+uuid: a9d44159-846a-449e-8796-327732437dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.customer.customer.field_balance
+  module:
+    - customer
+id: customer.customer.default
+targetEntityType: customer
+bundle: customer
+mode: default
+content:
+  field_balance:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

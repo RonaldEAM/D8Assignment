@@ -1,0 +1,24 @@
+uuid: 90d38faf-5681-495f-88e9-5973c0c795cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.customer.field_balance
+  module:
+    - customer
+id: customer.customer.field_balance
+field_name: field_balance
+entity_type: customer
+bundle: customer
+label: Balance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float
