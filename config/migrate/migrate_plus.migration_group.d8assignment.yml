@@ -1,0 +1,10 @@
+uuid: bc5777d8-7d75-4a7d-9419-b06f5a6179db
+langcode: en
+status: true
+dependencies: {  }
+id: d8assignment
+label: D8Assignment
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

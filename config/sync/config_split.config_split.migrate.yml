@@ -1,0 +1,21 @@
+uuid: 177d62c0-8546-44ea-b696-03d3e8cba564
+langcode: en
+status: false
+dependencies: {  }
+id: migrate
+label: MIgrate
+description: 'Contains all of the config for migrations.'
+folder: ../config/migrate
+module:
+  migrate: 0
+  migrate_drupal: 0
+  migrate_drupal_ui: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
+  migrate_tools: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\migrate\MigrateExecutable;
+use Drupal\migrate\MigrateMessage;
 
 /**
  * Implements hook_help().
@@ -21,4 +23,13 @@ function customer_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function customer_cron() {
+  $migration = \Drupal::service('plugin.manager.migration')->createInstance('customer_csv_import');
+  $executable = new MigrateExecutable($migration, new MigrateMessage());
+  $executable->import();
 }
