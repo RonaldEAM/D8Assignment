@@ -1,0 +1,9 @@
+
+customer.customer_controller_list:
+  path: '/customer/{id}'
+  defaults:
+    _controller: '\Drupal\customer\Controller\CustomerController::list'
+    _title: 'Customer List'
+    id: 0
+  requirements:
+    _permission: 'access content'
