@@ -1,3 +1,15 @@
+## Instructions
+
+For importing customers from csv file, it should be placed as web/sites/default/files/csv/customers.csv
+In root directory there's a folder `csv` with a csv file example, keys are `id,name,balance`
+
+### REST endpoints:
+
+GET, PATCH, DELETE: `/admin/structure/customer/{customer}`   
+POST: `/entity/customer`
+- format: json
+- authentication: basic auth
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
