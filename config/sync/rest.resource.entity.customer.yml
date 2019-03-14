@@ -1,0 +1,21 @@
+uuid: 4c5f1e6a-a0fd-4012-9ac6-d876f209f008
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - customer
+    - serialization
+id: entity.customer
+plugin_id: 'entity:customer'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - basic_auth
